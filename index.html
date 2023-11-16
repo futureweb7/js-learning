@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .light_area {
+        width: 600px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="light_area">
+      <button onclick="document.getElementById('light').src='pic_bulbon.gif'">
+        ON
+      </button>
+      <img id="light" src="pic_bulboff.gif" alt="test" />
+      <button onclick="document.getElementById('light').src='pic_bulboff.gif'">
+        OFF
+      </button>
+      <hr />
+      <h2 id="demo">I Love My Country</h2>
+      <button onclick="document.getElementById('demo').style.fontSize='40px'">
+        action
+      </button>
+      <hr />
+      <p id="pew"></p>
+      <button onclick="document.getElementById('pew').innerHTML=Date()">
+        click
+      </button>
+    </div>
+    <!-- <script src="StringMethods.js"></script> -->
+    <!-- <script src="StringSearch.js"></script> -->
+    <!-- <script src="numMethod.js"></script> -->
+    <!-- <script src="ArrayMethods.js"></script> -->
+    <script src="SortingArrays.js"></script>
+  </body>
+</html>
