@@ -1,16 +1,5 @@
-// curring function EXAMPLE ... 
-
-// function mul(a){
-//     return(b)=>{
-//         return(c)=>{
-//             return a*b*c;
-//         }
-//     }
-// }
-// console.log(mul(2)(3)(4));
 
 // String length
-
 // There are 3 methods for extracting a part of a string:
 // slice(start, end)--------------------- ok
 // substring(start, end) --------------------- ok

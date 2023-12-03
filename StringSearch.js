@@ -5,9 +5,9 @@
 // String search()  -------------------------------0k
 // String match()  -------------------------------0k
 // String matchAll()  -------------------------------0k
-// String includes()
-// String startsWith()
-// String endsWith()
+// String includes() -------------------------------0k
+// String startsWith()  -------------------------------0k
+// String endsWith()  -------------------------------0k
 
 let text = "Lorem ipsum dolor sit amet, consectetur dolor adipiscing elit."
 console.log("🚀 ~ file: StringSearch.js:13 ~ indexOf:", text.indexOf("dolor", 30))
