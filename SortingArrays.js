@@ -2,7 +2,7 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 console.log("🚀 ~ file: SortingArrays.js:2 ~ fruits:", fruits.reverse())
 console.log("🚀 ~ file: SortingArrays.js:2 ~ fruits:", fruits.sort())
 
-//Numeric Sort
+// Numeric Sort
 const points = [40, 100, 1, 5, 25, 10];
 const result = points.sort(
     function(a,b){
