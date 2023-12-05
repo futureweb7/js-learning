@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
     <title>web7 learning JS</title>
+    <!-- background-image:
+    linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url('assets/images/web.png'); -->
     <style>
+      body{
+        background:#222222;
+      }
       .wrapper {
         width: 100%;
         height: 100vh;
@@ -15,8 +20,7 @@
       }
       .container{
         width: 500px;
-        background-image:
-        linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url('assets/images/web.png');
+        background-image: linear-gradient(0.5turn,#0000, #00ff00bf,#0000), url(assets/images/web.png);
         background-repeat: no-repeat;
         background-position: center;
         padding: 20px;
@@ -33,12 +37,12 @@
           <button onclick="document.getElementById('light').src='pic_bulboff.gif'">
             OFF
           </button>
-          <hr />
+          <!-- <hr /> -->
           <h2 id="demo">I Love JavaScript </h2>
           <button onclick="document.getElementById('demo').style.fontSize='40px'">
             action
           </button>
-          <hr />
+          <!-- <hr /> -->
           <p id="pew"></p>
           <button onclick="document.getElementById('pew').innerHTML=gNumber(1,6)">
             click
@@ -66,6 +70,7 @@
     <!-- <script src="Loop.js"></script> -->
     <!-- <script src="AnonymousFunction.js"></script> -->
     <!-- <script src="CallbackFunctions.js"></script> -->
+    <script src="Objects.js"></script>
     <!-- <script src="Temp.js"></script> -->
   </body>
 </html>
