@@ -1,0 +1,142 @@
+:root {
+	--color-body: #f0f3f8;
+	--color-title: #202123;
+	--color-text: #87888a;
+	--color-card: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	gap: 40px;
+	padding: 30px 15px;
+	font-family: sans-serif;
+	color: var(--color-text);
+	background-color: var(--color-body);
+	font-size: 1.6rem;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	object-fit: cover;
+}
+
+.card {
+	--_radius: 3rem;
+	position: relative;
+	display: grid;
+	grid-template-columns: [card-header-start card-curve-start card-body-start] 1fr [card-header-end card-curve-end card-body-end];
+	grid-template-rows:
+		[card-header-start] 30rem
+		[card-curve-start card-body-start] calc(
+			var(--_radius) * 2
+		) [card-header-end card-curve-end]
+		auto [card-body-end];
+	max-width: 35rem;
+	width: 100%;
+	background-color: var(--color-card);
+	border-radius: var(--_radius);
+	overflow: hidden;
+	box-shadow: 0 0 5rem rgba(0, 0, 0, 0.03);
+}
+
+.card__header {
+	grid-area: card-header;
+	position: relative;
+	isolation: isolate;
+	background-color: var(--color-title);
+	overflow: hidden;
+}
+
+.card__header__bg {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	user-select: none;
+}
+
+.card__header__bg--video {
+	transform: scale(2);
+}
+
+.card::before {
+	grid-area: card-curve;
+	content: "";
+	position: absolute;
+	z-index: 1;
+	inset: 0;
+	background-color: var(--color-card);
+	border-top-right-radius: calc(var(--_radius) * 2);
+	pointer-events: none;
+}
+
+.card__body {
+	grid-area: card-body;
+	position: relative;
+	z-index: 1;
+	isolation: isolate;
+	padding: 3rem 2.5rem;
+}
+
+.card__body::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	transform: translateY(-100%);
+	width: calc(var(--_radius) * 2);
+	aspect-ratio: 1 / 2;
+	border-bottom-left-radius: calc(var(--_radius) * 2);
+	box-shadow: 0 calc(var(--_radius) * 2) 0 var(--color-card);
+	pointer-events: none;
+}
+
+.card__title,
+.card__sub-title {
+	color: var(--color-title);
+}
+
+.card__title {
+	text-transform: capitalize;
+	font-size: 2.6rem;
+	font-weight: bolder;
+}
+
+.card__text {
+	font-size: 1.8rem;
+	margin-block: 2.5rem;
+}
+
+.card__icon {
+	color: #d39471;
+	vertical-align: bottom;
+}
+
+.text-small {
+	color: var(--color-text);
+	font-size: 1.8rem;
+	font-weight: normal;
+}
