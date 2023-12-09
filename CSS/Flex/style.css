@@ -1,0 +1,97 @@
+.setion-gap {
+    padding: 50px 0;
+    width: 700px;
+    margin: auto;
+  }
+ /* ex one */
+ .ex1-flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #2d23f5;
+}
+  .ex1-flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    flex-grow: 1;
+}
+ /* ex two */
+ .ex2-flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #393681;
+}
+  .ex2-flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+.ex2-flex1{
+  order: 4;
+}
+.ex2-flex2{
+  order: 3;
+}
+.ex2-flex3{
+  order: 2;
+}
+.ex2-flex4{
+  order: 1;
+}
+ /* ex three */
+ .ex3-flex-container{
+  display: flex;
+  /* flex-flow: row wrap; */
+  /* flex-flow:  : flex-direction: row; + flex-wrap: wrap; */
+  flex-wrap: wrap;
+  background-color: #393681;
+ }
+ .ex3-flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.ex3-flex1,.ex3-flex4{
+  flex: 1 100%;
+  /* flex: flex-grow: 1; flex-shrink: inherit;   flex-basis: 100px; */
+  /* flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
+}
+.ex3-flex2{
+  flex: 1;
+}
+.ex3-flex3{
+  flex:2
+}
+
+/* ex four */
+.ex4-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background: burlywood;
+  gap: 2px;
+  text-align: center;
+}
+.ex4-flex-container > div {
+  padding: 10px;
+  background: brown;
+}
+.ex4-flex1, .ex4-flex4 {
+  flex: 1 100%;
+}
+.ex4-flex2 {
+  flex: 1;
+}
+.ex4-flex3 {
+  flex: 1 ;
+}
+.ex4-flex2 p, .ex4-flex3 p{
+  text-align: left;
+}

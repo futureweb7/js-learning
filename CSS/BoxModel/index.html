@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="setion-gap">
+        <div class="box">my name is robin</div>
+        <details>
+        <summary>box-sizing: content-box vs border-box</summary>
+        <p>
+        <span>
+        <pre>
+        Calculation of dimension:
+        -------------------------
+        let, width =300px , height=100px ,padding= 5px, margin=5px border=5px
+        --> for content-box:::
+        width = border(both side) + padding(both side) +border(both side)+ width,
+        300px = (5 + 5)+(5 + 5)+(5 + 5)+ 300  = 330px 
+
+        height =  border(both side) + padding(both side) +border(both side)+ height
+        300px = (5 + 5)+(5 + 5)+(5 + 5)+ 100  = 130px 
+
+        --> for border-box::: 
+        width = border(both side) + padding(both side) +border(both side)+ width,
+        300px = (5 + 5)+(5 + 5)+(5 + 5)+ 270  = 300px 
+                                      -------   
+        height =  border(both side) + padding(both side) +border(both side)+ height
+        100px = (5 + 5)+(5 + 5)+(5 + 5)+ 70  = 100px  
+                                      ------ 
+        </pre>
+        </span>
+        </p>
+        </details>
+    </section>
+</body>
+</html>
+
