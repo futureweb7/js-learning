@@ -1,0 +1,96 @@
+.flex__area, .wrapper__three .button__area {
+  display: block;
+  gap: 5px;
+}
+
+.wrapper__three {
+  max-width: 500px;
+  min-height: 400px;
+  padding: 20px;
+  margin: 30px auto;
+  border: 1px solid #222;
+  background: #3d3d3d;
+}
+.wrapper__three .button__area {
+  padding: 20px 0;
+}
+.wrapper__three .btn {
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.wrapper__three .btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.wrapper__three .btn__1 {
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+}
+.wrapper__three .btn__2 {
+  border-radius: 0px;
+  background: #416aa3;
+  color: #0e0d0d;
+}
+.wrapper__three .btn__3 {
+  border-radius: 20px;
+  background: #00ff00;
+  color: #000000;
+}
+.wrapper__three .btn__4 {
+  border-radius: 50%;
+  background: #6c6377;
+  color: #fff;
+  height: 100px;
+  width: 100px;
+}
+
+.wrapper__two {
+  max-width: 500px;
+  min-height: 400px;
+  padding: 20px;
+  margin: 30px auto;
+  border: 3px solid rgb(59, 57, 57);
+  background: rgb(41, 38, 38);
+}
+.wrapper__two h1 {
+  color: #ffffff;
+}
+.wrapper__two p {
+  color: #ffffff;
+}
+
+.wrapper__one {
+  max-width: 500px;
+  min-height: 400px;
+  padding: 20px;
+  margin: 30px auto;
+  background: rgb(201, 190, 190);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.wrapper__one h1 {
+  text-transform: uppercase;
+  color: rgb(41, 38, 38);
+}
+.wrapper__one nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.wrapper__one nav li {
+  display: inline;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.wrapper__one nav a {
+  padding: 10px 20px;
+  background: rgb(41, 38, 38);
+  color: #ffffff;
+}
+.wrapper__one nav a:hover {
+  background: rgb(59, 57, 57);
+}/*# sourceMappingURL=style.css.map */

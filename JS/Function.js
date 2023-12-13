@@ -97,9 +97,15 @@ sleep();
 
 // now call function --- 
 
-const person = {
+const personEx = {
    fullName: function(){
-      return this.fName + " " + this.lName;
+      return this.fName + " " + this.lName  ;
+   }
+}
+
+const person = {
+   fullName: function(x,y){
+      return this.fName + " " + this.lName + " " + x + " " + y ;
    }
 }
 
@@ -111,4 +117,32 @@ const person2 = {
    fName: "hemel",
    lName: "hasan"
 }
-console.log(person.fullName.call(person2));
+console.log(personEx.fullName.call(person1));
+console.log(person.fullName.call(person1,"kkk","llll"));
+
+// JavaScript apply() Method
+console.log(personEx.fullName.apply(person1));
+console.log(person.fullName.apply(person1,["neww","namee"]));
+
+
+
+
+// extra
+console.log("Big is ---->",Math.max(1,2,3,4,5,));
+console.log("Big is ---->" ,Math.max.apply("",[1,2,3,4,5]));
+
+
+
+// 🚀🚀 JavaScript Closures
+
+function tempo(){
+   let counter = 0;
+   return function(){
+      counter+=1;
+   }
+}
+const addnew = tempo();
+console.dir(addnew);
+addnew();
+addnew();
+addnew();

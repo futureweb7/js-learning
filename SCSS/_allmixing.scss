@@ -1,0 +1,19 @@
+@mixin  layout{
+    max-width: $maxWide;
+    min-height: $minHeight;
+    padding: 20px;
+    margin:30px auto;
+}
+@mixin border($width: 1px,$color){
+    border: $width solid $color;
+}
+@mixin borderRadius($radius){
+    border-radius: $radius;
+}
+@mixin buttonType($bg,$color){
+  background: $bg;
+  color: $color;
+}
+@mixin btnHover($bg){
+  background: $bg;
+}

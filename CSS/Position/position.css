@@ -1,0 +1,18 @@
+body{
+    overflow-x: hidden;
+}
+.item1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: -30px;
+    right: -30px;
+}
+/* .item1 {
+    position: relative;
+    left: 100px;
+    top: 100px;
+    z-index: 1;
+} */
