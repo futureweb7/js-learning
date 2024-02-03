@@ -18,11 +18,18 @@
 // String charAt()
 // String charCodeAt()
 // String split()
+// String length
+// String charAt()
+// String charCodeAt()
+// String at()
+// String [ ]
+// String repeat()
 
-let text = "  If you omit the second method, the method will slice out the rest" ;
+let text = "If you omit the second method, the method will slice out the rest" ;
 console.log("🚀 ~ file: test.js:20 ~ slice:", text.slice(0,10))
 console.log("🚀 ~ file: test.js:20 ~ substring:", text.substring(0,10))
 console.log("🚀 ~ file: test.js:20 ~ substr:", text.substr(-4))
+console.log("🚀 ~ file: test.js:20 ~ replace:", text.replace("method", "robin"))
 console.log("🚀 ~ file: test.js:20 ~ replace:", text.replace(/method/g, "robin"))
 console.log("🚀 ~ file: test.js:20 ~ replaceAll:", text.replaceAll("method", "robin"))
 console.log("🚀 ~ file: test.js:20 ~ text:", text.toLocaleLowerCase())
@@ -30,5 +37,5 @@ console.log("🚀 ~ file: test.js:20 ~ text:", text.toUpperCase())
 console.log("🚀 ~ file: test.js:20 ~ text:", text.concat(",", "BY ROBIN"))
 console.log("🚀 ~ file: test.js:20 ~ text:", text.trim())
 console.log("🚀 ~ file: test.js:20 ~ split:", text.split(' '))
-// console.log("🚀 ~ file: test.js:13 ~ text:", text.length)
+console.log("🚀 ~ file: test.js:13 ~ text:", text.length)
 

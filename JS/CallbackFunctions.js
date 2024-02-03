@@ -1,6 +1,6 @@
 // first Example ...
 function greeting(name,anotherFunction){
- console.log(`Hello ${name} you are`);
+ console.log(`Hello ${name} How you are`);
  anotherFunction();
 }
 

@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    margin: 0 50px;
+}
+nav ul{
+    display: flex;
+    order: 2;
+}
+nav ul a{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    margin-left: 20px;
+}
+.logo{
+    order: 1;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.container{
+  height: 600px;
+  margin: 0 40px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  gap: 40px;
+}
+.container img{
+    width: 60%;
+    height: 500px;
+}
+.hero__text{
+    width: 80%;
+}
+.hero__text h1 {
+    font-size: 2.3rem;
+    margin-bottom: 29px;
+    color: brown;
+}
+.hero__text p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.hero__text button {
+    border: none;
+    background: brown;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    border-radius: 6px;
+    transition: all .3s ease;
+}
+.hero__text button:hover {
+     background: rgba(0,0,0,.8);
+}
+.hero__text button:hover span {
+     color: #f5f00e;
+}
+@media(max-width:1024px) {
+
+      .hero__text{
+        flex: 50%;
+      }
+      .container img{
+        flex: 50%;
+        width: 60%;
+      }
+
+}
+@media(max-width:884px) {
+    .container{
+        margin-top: 10px;
+        flex-direction: column;
+      }
+      .hero__text{
+          width: 100%;
+          text-align: center;
+      }
+}
+@media(max-width:640px) {
+    .hero__text h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .hero__text p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:475px) {
+    nav ul{
+        display: none;
+        text-align: center;
+    }
+     .container img{
+        width: 100%;
+     }
+     .hero__text{
+        width: 100%;
+        text-align: center;
+    }
+    .hero__text h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .hero__text p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+}

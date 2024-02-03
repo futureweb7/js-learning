@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dom.css">
+    <title>Document</title>
+</head>
+<body>
+
+   <div class="wrapper">
+    
+    <button id="listen">Listen you bro ... </button>    
+    <hr>
+    <div id="container">
+        <button id="btn"> Bubbling or Event Capturing</button>    
+    </div>
+    <hr>
+    <div id="rdiv" style="border: 1px solid red; padding: 20px">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque unde at pariatur laborum similique dolore eveniet nobis ipsam mollitia quas iusto, consequatur aperiam culpa voluptatibus non provident explicabo delectus ipsum veritatis. Reiciendis fuga doloremque vero, sapiente inventore minus accusantium non.</p>
+        <button  onclick="removeEL()"> removeEventListener() </button>
+    </div>
+    <p id="rn"></p>
+
+    <hr>
+        <form action="" name="nForm" onsubmit="return validate()">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" value="robin">
+            <input type="submit" name="submit">
+        </form>
+
+        <h1> *** input number validate...</h1>
+        <input id="num">
+        <button type="submit" onclick="fsubmit()">submit</button>
+        <h2>Finding HTML Elements Using document.anchors</h2>
+
+        <a name="html">HTML Tutorial</a><br>
+        <a name="css">CSS Tutorial</a><br>
+        <a name="xml">XML Tutorial</a><br>
+
+        <p id="demo1"></p>
+        <hr/>
+        <h2>JavaScript HTMLDOM</h2>
+        <p>Displaying document.body</p>
+
+        <p id="demo2"></p>
+        <hr/>
+        <h2>Finding HTML Elements Using document.images</h2>
+
+        <img src="https://images.pexels.com/photos/45853/grey-crowned-crane-bird-crane-animal-45853.jpeg?auto=compress&cs=tinysrgb&w=400" width="362" height="266">
+        <img src="https://images.pexels.com/photos/45853/grey-crowned-crane-bird-crane-animal-45853.jpeg?auto=compress&cs=tinysrgb&w=400" width="362" height="255">
+        <p id="demo3"></p>
+
+   </div>
+
+
+    <script src="dom.js"></script>
+</body>
+</html>

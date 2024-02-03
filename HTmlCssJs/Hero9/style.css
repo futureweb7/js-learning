@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(0,0,0,1);
+}
+header {
+    position: relative;
+    padding: 2rem;
+    min-height: 100vh;
+    background-image: url(assets/2.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header::before{
+    content: "";
+    position: absolute;
+    background: radial-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,1)
+    );
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    z-index: 0;
+}
+header > *{
+    position: relative;
+}
+header p {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+    font-weight: 500;
+}
+header h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    padding: .5rem 0 2rem;
+}
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    background: chartreuse;
+    border-radius: 26px;
+    margin: 0 10px;
+    color: blue;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.btn__pri {
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+.panels__grids{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 3fr 2fr 3fr 3fr;
+    padding: 1rem;
+    gap: .5rem;
+}
+.panel{
+    background-color: #fff;
+    padding: 1.5rem;
+    min-height: 13em;
+    position: relative;
+    overflow: hidden;
+}
+.panel:nth-child(1){
+    background: url(assets/1.webp);
+    
+}
+.panel:nth-child(2){
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    
+}
+.panel:nth-child(3){
+    background: url(assets/1.webp);
+}
+.panel:nth-child(4){
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    
+}
+.panel:nth-child(6){
+    background: url(assets/8.webp);
+}
+.panel:nth-child(5){
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    
+}
+.panel:nth-child(7){
+    background: url(assets/1.jpg);
+}
+.panel:nth-child(8){
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    border:2px solid red;
+
+}
+.panel:nth-child(9){
+    background: url(assets/8.webp);
+}
+.panel:nth-child(10){
+    background-color: #3EECAC;
+    background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
+    
+}
+.panel:nth-child(11){
+    background: url(assets/8.webp);
+}
+.panel:nth-child(12){
+    background-color: #52ACFF;
+    background-image: linear-gradient(180deg, #52ACFF 25%, #FFE32C 100%); 
+}
+.panel:nth-child(13){
+    background: url(assets/1.jpg);
+}
+.panel:nth-child(1)::before{   
+    content: "";
+    position: absolute;
+    background:rgba(17, 118, 214, 0.48);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    z-index: 0;
+}
+.panel:nth-child(3)::before{   
+    content: "02";
+    position: absolute;
+    bottom: 10px;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.panels__grids .panel{
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+@media screen and (min-width:1000px) {
+    .panel:nth-child(1){
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    .panel:nth-child(2){
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+    .panel:nth-child(3){
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+    .panel:nth-child(4){
+        grid-column: 5/7;
+        grid-row: 1/2;
+    }
+    .panel:nth-child(5){
+        grid-column: 2/5;
+        grid-row: 2/3;
+    }    
+    .panel:nth-child(6){
+        grid-column: 5/7;
+        grid-row: 2/3;
+    }   
+    .panel:nth-child(8){
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }  
+    .panel:nth-child(8){
+        grid-column: 4/5;
+        grid-row: 3/4;
+    } 
+    .panel:nth-child(9){
+        grid-column:2/4 ;
+        grid-row: 3/4;
+    }
+    .panel:nth-child(10){
+        grid-column:4/5 ;
+        grid-row: 3/5;
+    }
+    .panel:nth-child(11){
+        grid-column: 5/7;
+        grid-row: 3/4;
+    }
+    /* .panel:nth-child(11){
+        grid-column: 1/3;
+        grid-row: 4/5;
+    } */
+}

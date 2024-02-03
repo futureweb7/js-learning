@@ -1,0 +1,40 @@
+.cus_img{
+border-radius: 20px;
+}
+.first__col {
+    border-radius: 20px;
+    background: #fff;
+
+}
+.last__row {
+    background: antiquewhite;
+    border-radius: 20px;
+}
+@media screen and (min-width:767px) {
+    
+    .cus_img{
+        position: relative;
+        z-index: 1;
+    }
+    .first__col {
+        border-radius: 20px;
+        position: relative;
+        z-index: 2;
+        left: 160px;
+        background: #fff;
+        top: 191px;
+        box-shadow: 1px 4px 5px rgba(0,0,0,.7);
+        height: 550px;
+        width: 550px;
+    }
+    .last__row {
+        position: relative;
+        z-index: 3;
+        background: antiquewhite;
+        padding: 10px 10px 37px;
+        border-radius: 20px;
+        width: 70%;
+        left: 300px;
+        top: 100px;
+    }
+}

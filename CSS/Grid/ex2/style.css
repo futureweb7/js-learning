@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --bg-color:#ffffff;
+    --text-color:#131313;
+    --nav-color:#ffffff;
+    --border-color:#dddddd;
+
+    --title-size:3.4rem;
+    --para-size:18px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none; 
+    scroll-behavior: smooth; 
+  }
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 15px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background:var(--bg-color);
+}
+.grid__container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+header{
+    grid-column: span 3;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px ;
+    border-bottom: 1px solid var(--border-color);
+}
+nav{
+    padding:30px;
+    border-right: 1px solid var(--border-color);
+}
+nav li{
+    text-decoration: underline; 
+    padding: 10px 0; 
+}
+article{
+  padding: 30px;
+}
+article h1{
+  font-size: var(--title-size);
+  max-width: 750px;
+}
+article img{
+    width: 100%;
+}
+article p{
+    margin-top: 20px;
+    line-height: 2em;
+}
+aside{
+    padding:30px;
+    border-left: 1px solid var(--border-color);
+}
+aside li{
+    padding:20px 0;
+}
+footer{
+    grid-column: span 3;
+    padding:30px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+ }
+@media(max-width:1050px){
+    nav{
+        grid-column: span 3;
+        border-bottom: 1px solid var(--border-color);
+    }
+    nav li{
+        display: inline-block;
+        margin-right: 10px;
+    }
+    article{
+       grid-column: span 2;
+    }
+    aside{
+        padding:10px;
+       
+    }
+}
+@media(max-width:860px){
+    article h1{
+        font-size:24px;
+      }
+    article, aside{
+        grid-column: span 3;
+     }
+     aside{
+        padding:30px;
+        border-left: 0;
+        border-top: 1px solid var(--border-color);
+     }
+
+
+}

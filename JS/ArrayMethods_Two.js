@@ -17,7 +17,7 @@
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 console.log("🚀  ~ at():", fruits.at(2))
-console.log("🚀  ~ copyWithin():", fruits.copyWithin(2, 0))
+console.log("🚀  ~ copyWithin():", fruits.copyWithin(2, 3))
 
 // for every()
 const arr = [12,70,30,90,20];

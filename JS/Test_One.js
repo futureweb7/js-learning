@@ -4,8 +4,10 @@ Math.floor(Math.random()*7)
 )
 
 function gNumber(min,max){
+ 
   return Math.floor(Math.random()*(max-min+1)) + min;
 }
+console.log("🚀 ~ gNumber ~ gNumber:", gNumber(1,6))
 // 2. How can you order names of students in your class sequentially?
 const student = ["alamin", "kuddus", "samim", "babla", "darus", "camily"];
 console.log("🚀 ~ file: Test_One.js:11 ~ student:", student.sort())
@@ -25,7 +27,7 @@ const isLeapYear = (year) => {
     return `${year} is not a Leap Year`;
   }
 };
-console.log("🚀 ~ file: Test_One.js:28 ~ isLeapyear ~ isLeapyear:", isLeapYear(1900))
+console.log("🚀 ~ file: Test_One.js:28 ~ isLeapyear ~ isLeapyear:", isLeapYear(2020))
 
 // 5. How would you determine the number of vowels in a sentence?
       // *** WAY__ONE

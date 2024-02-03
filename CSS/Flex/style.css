@@ -1,10 +1,38 @@
 .setion-gap {
-    padding: 50px 0;
-    width: 700px;
-    margin: auto;
-  }
+  width: 800px;
+  margin: auto;
+  background: antiquewhite;
+  margin-bottom: 35px;
+}
+  .box__area {
+    background: aquamarine;
+    display: flex;
+    gap: 10px;
+}
+.box__item {
+  background: #e0f4ff;
+  padding: 20px;
+  flex: 1;
+}
+
+.wrapper {
+  display: flex;
+  height: 300px;
+  padding: 20px;
+  gap: 10px;
+}
+.one{
+  flex: 1;
+}
+.two {
+  flex: 1;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-end; */
+  align-self: flex-end;
+}
  /* ex one */
- .ex1-flex-container {
+ /* .ex1-flex-container {
   display: flex;
   flex-flow: row wrap;
   background-color: #2d23f5;
@@ -17,9 +45,9 @@
     line-height: 75px;
     font-size: 30px;
     flex-grow: 1;
-}
+} */
  /* ex two */
- .ex2-flex-container {
+ /* .ex2-flex-container {
   display: flex;
   flex-flow: row wrap;
   background-color: #393681;
@@ -43,16 +71,16 @@
 }
 .ex2-flex4{
   order: 1;
-}
+} */
  /* ex three */
- .ex3-flex-container{
-  display: flex;
+ /* .ex3-flex-container{
+  display: flex; */
   /* flex-flow: row wrap; */
   /* flex-flow:  : flex-direction: row; + flex-wrap: wrap; */
-  flex-wrap: wrap;
-  background-color: #393681;
- }
- .ex3-flex-container > div {
+  /* flex-wrap: wrap;
+  background-color: #393681; */
+ /* } */
+ /* .ex3-flex-container > div {
   background-color: #f1f1f1;
   margin: 10px;
   padding: 10px;
@@ -60,19 +88,23 @@
   font-size: 20px;
 }
 .ex3-flex1,.ex3-flex4{
-  flex: 1 100%;
+  flex: 1 100%; */
   /* flex: flex-grow: 1; flex-shrink: inherit;   flex-basis: 100px; */
   /* flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
-}
+/* }
 .ex3-flex2{
   flex: 1;
 }
 .ex3-flex3{
   flex:2
 }
-
+@media (max-width:700px){
+  .ex3-flex1,.ex3-flex2,.ex3-flex3, .ex3-flex4 {
+    flex: 1 100%;
+  }
+} */
 /* ex four */
-.ex4-flex-container {
+/* .ex4-flex-container {
   display: flex;
   flex-wrap: wrap;
   background: burlywood;
@@ -95,3 +127,8 @@
 .ex4-flex2 p, .ex4-flex3 p{
   text-align: left;
 }
+@media (max-width:700px){
+  .ex4-flex1,.ex4-flex2,.ex4-flex3, .ex4-flex4 {
+    flex: 1 100%;
+  }
+} */

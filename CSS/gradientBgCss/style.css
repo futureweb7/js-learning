@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+body{
+    font-family: 'Rubik Mono One', monospace;
+}
+img{
+    width: 100%;
+}
+section{
+    width: 100%;
+    max-width: calc(100% - 600px);
+    margin:10px auto;
+    min-height: 350px;
+    padding: 10px;
+}
+.bg__white{
+   background: #fff;
+   color: #000;
+}
+.bg__dark{
+     background: #000;
+     color: aliceblue;
+}
+.dark__text,.white__text {
+    font-size: clamp(10px,5vw,100px);
+    text-transform: capitalize;
+}
+.dark1{
+  color:greenyellow;
+  /* -webkit-text-stroke: 2px #222; */
+}
+.dark2{
+  color: transparent;
+  -webkit-text-stroke: 2px greenyellow;
+}
+.dark3{
+    color:greenyellow;
+}
+.light1{
+    color: #000;
+    -webkit-text-stroke: 2px greenyellow;
+}
+.light2{
+    color: transparent;
+    -webkit-text-stroke: 2px greenyellow;
+}
+.light3 {
+    color: chartreuse;
+    -webkit-text-stroke: 4px #93f103;
+}
+
+.hero__banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+}
+.hero__img {
+    height: 200px;
+    position: fixed;
+    width: 300px;
+    transform: rotate(7deg);
+    border-radius: 50px;
+    top: 0;
+}
+.hero__title {
+    position: absolute;
+    color: #000;
+    text-align: center;
+    font-size: 5vw;
+}
+.hero__stroke{
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+}
+.pic__bg {
+    background-image: url('https://images.unsplash.com/photo-1517670972079-a58c8d6c0af8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80');
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* transform: scaleY(-1); */
+}
+.b {
+    color: black;
+    background-color: #9ea7a4;
+    mix-blend-mode: screen;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    font-size: 40px;
+    width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.left__side,.right__side{
+   flex: 1 50%;
+   position: relative;
+}
+.logo{
+    width: 10%;
+    margin-top:20px;
+    margin-left: 100px; 
+}
+.left__content{
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+}
+.left__content h1,.slider__content h1 {
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #EC008B;
+    padding: 10px 0;
+}
+.left__content p,.slider__content p {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 22px;
+}
+.left__content button {
+    border: none;
+    outline: none;
+    background: #EC008B;
+    color: #fff;
+    font-size: 1rem;
+    padding: 15px 25px;
+    margin-top: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.left__content button:hover {
+    background: rgba(182, 48, 164, 0.8);
+}
+#slider{
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+#slider img{
+    width: 100%;
+}
+.slider__content{
+   width: 100%;
+   height: 40%;
+   background: #EC008B;
+   padding: 20px 0 0 20px;
+}
+.slider__content h1,.slider__content p{
+    color: azure;
+}
+.slider__btns{
+    width: 120px;
+    margin-top: 10px;
+}
+.slider__btns img{
+    width: 15%;
+    cursor: pointer;
+}
+.slider__btns span {
+    height: 24px;
+    width: 3px;
+    background: azure;
+    display: inline-block;
+    margin: 0 10px;
+}
+@media(max-width: 884px) {
+    .wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+    .left__side,.right__side{
+        flex-basis:100%;
+     }
+     .logo {
+        margin: 20px auto;
+        display: block;
+        width: 20%;
+    }
+     .left__content {
+
+    }
+    .slider__content{
+     height: auto;
+     }
+}

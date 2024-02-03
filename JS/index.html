@@ -10,6 +10,7 @@
     <style>
       body{
         background:#222222;
+        color: aliceblue;
       }
       .wrapper {
         width: 100%;
@@ -29,7 +30,32 @@
   </head>
   <body>
     <div class="wrapper">
-        <div class="container">
+
+
+      <p id="demo"></p>
+
+
+      <script>
+         const cars = ["BMW", "Volvo", "Saab", "Ford"];
+         const len = cars.length;
+         let txt= "";
+         for (let i = 0; i < len; i++) {
+          txt += cars[i] + "</br>";
+         }
+         document.querySelector("#demo").innerHTML = txt;
+      </script>
+      <!-- <script>
+      const cars = ["BMW", "Volvo", "Saab", "Ford"];
+      let len = cars.length;
+      let text = "";
+      
+      for (let i = 0; i < len; i++) {
+        text += cars[i] + "<br>";
+      }
+      
+      document.querySelector("#demo").innerHTML = text;
+      </script> -->
+        <!-- <div class="container">
           <button onclick="document.getElementById('light').src='pic_bulbon.gif'">
             ON
           </button>
@@ -37,17 +63,17 @@
           <button onclick="document.getElementById('light').src='pic_bulboff.gif'">
             OFF
           </button>
-          <!-- <hr /> -->
+         
           <h2 id="demo">I Love JavaScript </h2>
           <button onclick="document.getElementById('demo').style.fontSize='40px'">
             action
           </button>
-          <!-- <hr /> -->
+          
           <p id="pew"></p>
           <button onclick="document.getElementById('pew').innerHTML=gNumber(1,6)">
             click
           </button>
-        </div>
+        </div> -->
     </div>
       <!-- <p id="pew"></p>
       <button onclick="document.getElementById('pew').innerHTML=Date()">
@@ -68,7 +94,7 @@
     <!-- <script src="Randon.js"></script> -->
     <!-- <script src="jsComparison.js"></script> -->
     <!-- <script src="Loop.js"></script> -->
-    <!-- <script src="AnonymousFunction.js"></script> -->
+    <script src="AnonymousFunction.js"></script>
     <!-- <script src="CallbackFunctions.js"></script> -->
     <!-- <script src="Objects.js"></script> -->
     <!-- <script src="Function.js"></script> -->
@@ -78,5 +104,6 @@
     <!-- <script src="Promises.js"></script> -->
     <!-- <script src="AsyncAwait.js"></script> -->
     <!-- <script src="Temp.js"></script> -->
+    <!-- <script src="EXER.js"></script> -->
   </body>
 </html>
